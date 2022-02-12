@@ -21,7 +21,7 @@ const Header = () => {
                      <a href="#services">services</a>
                   </li>
                   <li>
-                     <a href="./index.html#about">about</a>
+                     <a href="#about">about</a>
                   </li>
                   <li>
                      <a href="#contact">contact</a>

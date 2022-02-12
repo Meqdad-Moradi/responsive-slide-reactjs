@@ -1,2 +1,5 @@
 #about {
+   .about-content {
+      @include grid();
+   }
 }
