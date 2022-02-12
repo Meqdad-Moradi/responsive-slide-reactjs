@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+   const [showNave, setShowNave] = useState(false);
+
+   // toggle the navigation menu
+   const toggle = () => {
+      setShowNave(!showNave);
+   };
+
    return (
       <header>
          <div className="container">
@@ -9,7 +16,7 @@ const Header = () => {
                <NavLink to="/">logo</NavLink>
             </div>
 
-            <nav className="nav">
+            <nav className={showNave === true ? "nav active" : "nav"}>
                <ul className="nav-list">
                   <li>
                      <NavLink to="/">home</NavLink>
@@ -27,11 +34,13 @@ const Header = () => {
                      <a href="#contact">contact</a>
                   </li>
                </ul>
+               <button className="register-btn btn">register</button>
             </nav>
 
-            <button className="register-btn btn">register</button>
-
-            <div className="toggler">
+            <div
+               className={showNave === true ? "toggler active" : "toggler"}
+               onClick={toggle}
+            >
                <span></span>
                <span></span>
                <span></span>
