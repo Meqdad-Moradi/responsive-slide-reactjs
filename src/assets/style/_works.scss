@@ -1,0 +1,67 @@
+#works {
+   background-color: $light;
+
+   .projects-grid {
+      margin-top: 2.5em;
+      @include grid();
+   }
+
+   .project {
+      box-shadow: 2.3px 3.5px 5.3px rgba(0, 0, 0, 0.008),
+         7.8px 11.8px 17.9px rgba(0, 0, 0, 0.012),
+         35px 53px 80px rgba(0, 0, 0, 0.02);
+      border-radius: 0.5em;
+      overflow: hidden;
+      background-color: $white;
+      position: relative;
+
+      &:hover {
+         .content {
+            transform: translateY(0);
+            background-color: $black;
+         }
+      }
+
+      .img-box {
+         position: relative;
+
+         &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: $black;
+            position: absolute;
+            inset: 0;
+            mix-blend-mode: multiply;
+            opacity: 0.4;
+            z-index: 1;
+         }
+      }
+   }
+
+   .content {
+      width: 100%;
+      padding: 1em 2em 2em;
+      position: absolute;
+      inset: auto auto 0 0;
+      transform: translateY(5rem);
+      transition: $transition;
+      transition-duration: 0.5s;
+      @include flex(column, end, start);
+      z-index: 2;
+      h3 {
+         font-weight: 600;
+         color: $white;
+         text-transform: uppercase;
+      }
+      .btn {
+         margin-top: 1.5em;
+         &:hover {
+            background-color: $dark;
+         }
+         &:active {
+            background-color: $black;
+         }
+      }
+   }
+}

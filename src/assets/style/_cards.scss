@@ -1,0 +1,9 @@
+.card {
+   background-color: $light;
+   overflow: hidden;
+   border-radius: 0.5em;
+
+   .content {
+      padding: 2em;
+   }
+}

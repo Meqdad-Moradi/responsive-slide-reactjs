@@ -1,0 +1,74 @@
+header {
+   height: 80px;
+   position: sticky;
+   top: 0;
+   background-color: $white;
+   z-index: 9999;
+   box-shadow: 0 5px 5px -7px rgba(0, 0, 0, 0.2);
+
+   .container {
+      @include flex($jc: stretch);
+      height: inherit;
+
+      a {
+         color: $black;
+         transition: $transition;
+
+         &:hover {
+            color: $primary;
+         }
+
+         &.active {
+            color: $primary;
+         }
+      }
+   }
+
+   .logo {
+      a {
+         font-size: 1.5rem;
+         font-weight: 600;
+         color: $primary;
+         text-transform: uppercase;
+      }
+   }
+
+   .nav {
+      margin-left: 2em;
+   }
+
+   .nav-list {
+      @include flex();
+      gap: 3em;
+   }
+
+   .register-btn {
+      margin-left: auto;
+      transition: $transition;
+      cursor: pointer;
+      border-radius: 50px;
+      padding: 0.5em 1em;
+      margin-top: 0;
+      line-height: 1;
+
+      &:hover {
+         transform: translateY(0);
+      }
+   }
+
+   .toggler {
+      padding: 0.5em;
+      cursor: pointer;
+      //   @include flex(column);
+      margin-left: auto;
+      display: none;
+
+      span {
+         height: 3px;
+         width: 20px;
+         background-color: black;
+         display: inline-block;
+         margin: 0.1em;
+      }
+   }
+}
