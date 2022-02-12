@@ -2,4 +2,34 @@
    .about-content {
       @include grid();
    }
+
+   .socials {
+      margin-top: 1em;
+      a {
+         display: inline-block;
+         margin-right: 1em;
+         font-size: 1.25rem;
+         color: $primary;
+         transition: $transition;
+
+         &:hover {
+            color: $black;
+         }
+      }
+   }
+}
+
+@media (max-width: 830px) {
+   #about {
+      .about-content {
+         gap: 0;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column-reverse;
+      }
+
+      .img-box {
+         margin-top: 3em;
+      }
+   }
 }

@@ -1,13 +1,22 @@
 import React from "react";
 import MainTitle from "./global/MainTitle";
 import about_img from "./../assets/images/girl.jpg";
+import {
+   FaInstagram,
+   FaTwitter,
+   FaFacebookSquare,
+   FaYoutube,
+} from "react-icons/fa";
 
 const About = () => {
    return (
       <section id="about">
          <div className="container">
             <div className="about-content">
-               <div className="col">
+               <div className="img-box">
+                  <img src={about_img} alt="about_image" />
+               </div>
+               <div className="about-text">
                   <MainTitle
                      title="about us"
                      subTitle="who are we?"
@@ -30,26 +39,30 @@ const About = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        facebook
+                        <FaFacebookSquare />
                      </a>
                      <a
-                        href="http://www.facebook.com/"
+                        href="http://www.twitter.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        twitter
+                        <FaTwitter />
                      </a>
                      <a
-                        href="http://www.facebook.com/"
+                        href="http://www.instagram.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                      >
-                        instagram
+                        <FaInstagram />
+                     </a>
+                     <a
+                        href="http://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <FaYoutube />
                      </a>
                   </div>
-               </div>
-               <div className="img-box">
-                  <img src={about_img} alt="about_image" />
                </div>
             </div>
          </div>
