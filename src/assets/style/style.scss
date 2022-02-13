@@ -117,7 +117,7 @@ section {
 
    &:hover {
       background-color: $black;
-      box-shadow: 0.5em 0.5em 1rem -.3em rgba($primary, 0.5);
+      box-shadow: 0.5em 0.5em 1rem -0.3em rgba($primary, 0.5);
       transform: translateY(-5px);
    }
 
@@ -154,3 +154,6 @@ section {
 @import "works";
 @import "about";
 @import "contact";
+
+/* works page style */
+@import "singleprj";

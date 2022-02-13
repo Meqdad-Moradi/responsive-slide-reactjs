@@ -113,8 +113,8 @@ section {
   padding: 0.4em 1.5em;
   margin-top: 2em;
   color: #f9fafb !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -189,8 +189,8 @@ header .container {
 
 header .container a {
   color: #252b3c;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .container a:hover {
@@ -251,8 +251,8 @@ header .nav-list {
 
 header .register-btn {
   margin-left: auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   border-radius: 50px;
   padding: 0.5em 1em;
@@ -512,8 +512,8 @@ header .toggler span {
 #services .card .img-box img {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transition-duration: .7s;
           transition-duration: .7s;
 }
@@ -618,8 +618,8 @@ header .toggler span {
   inset: auto auto 0 0;
   -webkit-transform: translateY(5rem);
           transform: translateY(5rem);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   display: -webkit-box;
@@ -658,6 +658,36 @@ header .toggler span {
   background-color: #252b3c;
 }
 
+/* works-page */
+.works-page .work-banner {
+  background: url("../images/laptop.jpg") no-repeat center/cover;
+  min-height: 80vh;
+  margin-bottom: 2.5em;
+}
+
+.works-page .work-banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  min-height: inherit;
+}
+
+.works-page .work-banner .container h1 {
+  color: white;
+}
+
 #about .about-content {
   display: -ms-grid;
   display: grid;
@@ -681,8 +711,8 @@ header .toggler span {
   margin-right: 1em;
   font-size: 1.25rem;
   color: #bf44cf;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #about .socials a:hover {
@@ -705,5 +735,74 @@ header .toggler span {
   #about .img-box {
     margin-top: 3em;
   }
+}
+
+/* works page style */
+.singlePrj {
+  display: -ms-grid;
+  display: grid;
+  gap: 3em;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.singlePrj:not(:first-child) {
+  margin-top: 2em;
+}
+
+.singlePrj .prj-content {
+  display: -ms-grid;
+  display: grid;
+  gap: 3em;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding: 1.5em 2em 2em;
+  -webkit-transform: translateY(72%);
+          transform: translateY(72%);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.singlePrj .prj-details h2 {
+  text-transform: uppercase;
+}
+
+.singlePrj .prj-details p {
+  color: #252b3c;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.singlePrj .btns .btn {
+  margin-right: 2em;
+}
+
+.singlePrj:hover .prj-content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.singlePrj:hover .prj-details p {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@ const Header = () => {
                <NavLink to="/">logo</NavLink>
             </div>
 
-            <nav className={showNave === true ? "nav active" : "nav"}>
+            <nav className={showNave ? "nav active" : "nav"}>
                <ul className="nav-list">
                   <li>
                      <NavLink to="/">home</NavLink>
@@ -38,7 +38,7 @@ const Header = () => {
             </nav>
 
             <div
-               className={showNave === true ? "toggler active" : "toggler"}
+               className={showNave ? "toggler active" : "toggler"}
                onClick={toggle}
             >
                <span></span>

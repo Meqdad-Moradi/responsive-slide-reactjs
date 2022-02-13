@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import Aos from "aos";
 
-const Project = ({ img, prjName }) => {
+
+const Project = ({ img, prjName, dataAos, delay }) => {
+   useEffect(() => {
+      Aos.init({ duration: 1000, easing: "ease-in-out" });
+   }, []);
    return (
-      <div className="project">
+      <div className="project" data-aos={dataAos} data-aos-delay={delay}>
          <div className="img-box">
             <img src={img} alt="project" />
          </div>

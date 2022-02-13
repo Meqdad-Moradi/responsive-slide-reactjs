@@ -1,0 +1,48 @@
+.singlePrj {
+   @include grid(end);
+   min-height: 70vh;
+   overflow: hidden;
+
+   &:not(:first-child) {
+      margin-top: 2em;
+   }
+
+   .prj-content {
+      @include grid(end);
+      padding: 1.5em 2em 2em;
+      transform: translateY(72%);
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(30px);
+      transition: $transition;
+   }
+
+   .prj-details {
+      h2 {
+        //  color: $white;
+         text-transform: uppercase;
+      }
+      p {
+         color: $black;
+         transform: translateX(40px);
+         transition: $transition;
+      }
+   }
+
+   .btns {
+      .btn {
+         margin-right: 2em;
+      }
+   }
+
+   &:hover {
+      .prj-content {
+         transform: translateY(0);
+      }
+
+      .prj-details {
+         p {
+            transform: translateX(0);
+         }
+      }
+   }
+}

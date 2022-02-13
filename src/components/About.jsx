@@ -1,12 +1,12 @@
 import React from "react";
-import MainTitle from "./global/MainTitle";
-import about_img from "./../assets/images/girl.jpg";
 import {
+   FaFacebookSquare,
    FaInstagram,
    FaTwitter,
-   FaFacebookSquare,
    FaYoutube,
 } from "react-icons/fa";
+import about_img from "./../assets/images/girl.jpg";
+import MainTitle from "./global/MainTitle";
 
 const About = () => {
    return (

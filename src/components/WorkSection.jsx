@@ -16,12 +16,42 @@ const WorkSection = () => {
             />
 
             <div className="projects-grid">
-               <Project img={img1} prjName="project one" />
-               <Project img={img2} prjName="project two" />
-               <Project img={img1} prjName="project three" />
-               <Project img={img2} prjName="project four" />
-               <Project img={img1} prjName="project five" />
-               <Project img={img2} prjName="project six" />
+               <Project
+                  img={img1}
+                  prjName="project one"
+                  dataAos="fade-up"
+                  delay={0}
+               />
+               <Project
+                  img={img2}
+                  prjName="project two"
+                  dataAos="fade-up"
+                  delay={300}
+               />
+               <Project
+                  img={img1}
+                  prjName="project three"
+                  dataAos="fade-up"
+                  delay={500}
+               />
+               <Project
+                  img={img2}
+                  prjName="project four"
+                  dataAos="fade-up"
+                  delay={700}
+               />
+               <Project
+                  img={img1}
+                  prjName="project five"
+                  dataAos="fade-up"
+                  delay={900}
+               />
+               <Project
+                  img={img2}
+                  prjName="project six"
+                  dataAos="fade-up"
+                  delay={1100}
+               />
             </div>
          </div>
       </section>
