@@ -18,7 +18,7 @@ const SinglePrj = ({ prjName, content, bg }) => {
                <Link to="/" className="btn">
                   show more
                </Link>
-               <Link to="/" className="btn">
+               <Link to="/" className="btn btn-secondary">
                   Project
                </Link>
             </div>

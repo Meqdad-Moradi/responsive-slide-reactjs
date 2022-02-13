@@ -737,6 +737,15 @@ header .toggler span {
   }
 }
 
+footer {
+  padding-block: 4em;
+  background-color: #252b3c;
+}
+
+footer p {
+  color: #f9fafb;
+}
+
 /* works page style */
 .singlePrj {
   display: -ms-grid;
@@ -750,12 +759,22 @@ header .toggler span {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  min-height: 70vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
 .singlePrj:not(:first-child) {
   margin-top: 2em;
+}
+
+.singlePrj:hover .prj-content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.singlePrj:hover .prj-details p {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .singlePrj .prj-content {
@@ -786,23 +805,25 @@ header .toggler span {
 
 .singlePrj .prj-details p {
   color: #252b3c;
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
+  -webkit-transform: translate(40px, 20px);
+          transform: translate(40px, 20px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .singlePrj .btns .btn {
   margin-right: 2em;
 }
 
-.singlePrj:hover .prj-content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.singlePrj .btns .btn.btn-secondary {
+  background-color: #4453e2;
 }
 
-.singlePrj:hover .prj-details p {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.singlePrj .btns .btn.btn-secondary:hover {
+  background-color: #252b3c;
+  -webkit-box-shadow: 0.5em 0.5em 1rem -0.3em rgba(68, 83, 226, 0.5);
+          box-shadow: 0.5em 0.5em 1rem -0.3em rgba(68, 83, 226, 0.5);
 }
 /*# sourceMappingURL=style.css.map */

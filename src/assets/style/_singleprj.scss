@@ -1,10 +1,22 @@
 .singlePrj {
    @include grid(end);
-   min-height: 70vh;
+   min-height: 50vh;
    overflow: hidden;
 
    &:not(:first-child) {
       margin-top: 2em;
+   }
+
+   &:hover {
+      .prj-content {
+         transform: translateY(0);
+      }
+
+      .prj-details {
+         p {
+            transform: translate(0, 0);
+         }
+      }
    }
 
    .prj-content {
@@ -18,13 +30,13 @@
 
    .prj-details {
       h2 {
-        //  color: $white;
          text-transform: uppercase;
       }
       p {
          color: $black;
-         transform: translateX(40px);
+         transform: translate(40px, 20px);
          transition: $transition;
+          transition-delay: .2s;
       }
    }
 
@@ -32,16 +44,11 @@
       .btn {
          margin-right: 2em;
       }
-   }
-
-   &:hover {
-      .prj-content {
-         transform: translateY(0);
-      }
-
-      .prj-details {
-         p {
-            transform: translateX(0);
+      .btn.btn-secondary {
+         background-color: rgb(68, 83, 226);
+         &:hover {
+            background-color: $black;
+            box-shadow: 0.5em 0.5em 1rem -0.3em rgba(rgb(68, 83, 226), 0.5);
          }
       }
    }

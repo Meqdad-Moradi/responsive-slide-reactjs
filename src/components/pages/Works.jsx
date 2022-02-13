@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import SinglePrj from "../SinglePrj";
 import MainTitle from "../global/MainTitle";
+import Footer from "../Footer";
 
 import image1 from "./../../assets/images/girl.jpg";
 import image2 from "./../../assets/images/laptop.jpg";
@@ -51,6 +52,8 @@ const Works = () => {
                </section>
             </div>
          </div>
+
+         <Footer />
       </>
    );
 };
